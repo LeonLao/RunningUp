@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RunningUp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="radio_1">运动圈</string>
+    <string name="radio_2">发现</string>
+    <string name="radio_3">运动</string>
+    <string name="radio_4">消息</string>
+    <string name="radio_5">我</string>
+    <string name="user_name">用户名</string>
+    <string name="time">发布时间</string>
+    <string name="title">发布标题的说法咖啡爱上的咖啡姐阿斯兰的会计法失联客机法律上的反馈骄傲的咖啡机案例</string>
+</resources>
