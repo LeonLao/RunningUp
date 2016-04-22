@@ -5,17 +5,20 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/topLayout"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:paddingTop="10dp">
         <LinearLayout
+            android:id="@+id/user_headLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="15dp">
 
         <com.example.runningup.RoundImage
+            android:id="@+id/user_headView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@mipmap/girl">
@@ -57,7 +60,56 @@
         android:textSize="18sp"
         android:textColor="#242424"/>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testtesttesttest!!!!!"/>
+
+        <include
+            android:layout_height="200dp"
+            layout="@layout/my_view"
+            android:layout_width="wrap_content">
+
+        </include>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+
+        <include
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            layout="@layout/circle_item_bottom_distance"
+            android:layout_width="wrap_content">
+        </include>
+
+        <include
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            layout="@layout/circle_item_bottom_comment"
+            android:layout_width="wrap_content">
+        </include>
+
+        <include
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            layout="@layout/circle_item_bottom_like"
+            android:layout_width="wrap_content">
+        </include>
+
+    </LinearLayout>
 
 
 </LinearLayout>
