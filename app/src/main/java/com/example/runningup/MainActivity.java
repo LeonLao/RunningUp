@@ -101,7 +101,7 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 //        for (int i = 0; i < 3; i++)
 //            for (int j = 0; j < 3; j++) {
 ////                Button btn = new Button(this);
-////                btn.setText(String.valueOf(count));
+////             btn.setText(String.valueOf(count));
 //                ImageView btn = new ImageView(this);
 //                btn.setImageResource(R.mipmap.girl);
 //                count++;

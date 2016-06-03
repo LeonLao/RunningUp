@@ -12,16 +12,32 @@
         <!-->-->
     <!--</GridLayout>-->
 
-    <GridView
-        android:id="@+id/imageGridView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="3"
-        android:columnWidth="30dp"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp"
-        android:horizontalSpacing="10dp">
+    <!--<GridView-->
+        <!--android:id="@+id/imageGridView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:numColumns="3"-->
+        <!--android:columnWidth="30dp"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:verticalSpacing="10dp"-->
+        <!--android:horizontalSpacing="10dp">-->
 
-    </GridView>
+    <!--</GridView>-->
+
+    <com.example.runningup.widgets.MyGridView
+        android:id="@+id/myView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        >
+
+
+    </com.example.runningup.widgets.MyGridView>
 
 </LinearLayout>

@@ -1,21 +1,17 @@
 package com.example.runningup;
 
 import android.app.Activity;
-import android.bluetooth.BluetoothA2dp;
-import android.media.Image;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.PipedReader;
+import com.example.runningup.adapter.ListItemAdapter;
 
 /**
  * Created by jack on 2016/4/13.
@@ -27,13 +23,20 @@ public class SportsCircleActivity extends Activity{
     private ImageAdapter imageAdapter = new ImageAdapter();
 
 
+
+    private ListItemAdapter listItemAdapter;
+    //private ImageGridAdapter imageeGridAdapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sport_circle);
 
+        //运动圈列表适配
         listView = (ListView)findViewById(R.id.circle_listView);
-        listView.setAdapter(adapter);
+        listItemAdapter = new ListItemAdapter(SportsCircleActivity.this);
+        listView.setAdapter(listItemAdapter);
 
 
 
@@ -111,7 +114,7 @@ public class SportsCircleActivity extends Activity{
                 viewHolder.like = (TextView) convertView.findViewById(R.id.like);
                 viewHolder.comment = (TextView) convertView.findViewById(R.id.comment);
                // viewHolder.imageLayout = (GridLayout) convertView.findViewById(R.id.imageLayout);
-                viewHolder.imageGridView = (GridView) convertView.findViewById(R.id.imageGridView);
+                viewHolder.imageGridView = (GridView) convertView.findViewById(R.id.myView);
 
                 convertView.setTag(viewHolder);
             } else {

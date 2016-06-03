@@ -1,4 +1,4 @@
-package com.example.runningup;
+package com.example.runningup.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +13,8 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+import com.example.runningup.R;
 
 /**
  * Created by jack on 2016/3/31.
