@@ -1,9 +1,9 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+   >
 
     <!--<GridLayout-->
         <!--android:id="@+id/imageLayout"-->
@@ -27,17 +27,17 @@
     <com.example.runningup.widgets.MyGridView
         android:id="@+id/myView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:horizontalSpacing="0.0dip"
         android:listSelector="@null"
         android:numColumns="3"
         android:stretchMode="columnWidth"
         android:verticalSpacing="0.0dip"
         android:paddingLeft="15px"
-        android:paddingRight="15px"
+        android:paddingRight="20px"
         >
 
 
     </com.example.runningup.widgets.MyGridView>
 
-</LinearLayout>
+</RelativeLayout>

@@ -7,10 +7,10 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/dislike"
+        android:id="@+id/dislikeimage"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@mipmap/like"/>
+        android:src="@mipmap/dislike"/>
     <TextView
         android:id="@+id/like"
         android:layout_width="wrap_content"
