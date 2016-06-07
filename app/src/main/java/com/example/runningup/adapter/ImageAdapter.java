@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
+import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.example.runningup.R;
@@ -51,9 +53,11 @@ public class ImageAdapter extends BaseAdapter{
         ViewHolder viewHolder = null;
         if (convertView == null){
             LayoutInflater layoutInflater = LayoutInflater.from(mContext);
-            convertView = View.inflate(mContext,R.layout.image_item,null);
+            //convertView = layoutInflater.inflate(mContext,R.layout.image_item,null);
+            convertView = layoutInflater.inflate(R.layout.image_item,parent,false);
 
-            convertView.setLayoutParams(new AbsListView.LayoutParams((int)(parent.getWidth()/3)-1,(int)(parent.getWidth()/3) -1));
+            //convertView.setLayoutParams(new AbsListView.LayoutParams((int)(parent.getWidth()/3)-1,(int)(parent.getWidth()/3) -1));
+            convertView.setLayoutParams(new GridView.LayoutParams(width/3,width/3));
 
             viewHolder = new ViewHolder();
             viewHolder.imageView = (ImageView)convertView.findViewById(R.id.image);
@@ -61,7 +65,7 @@ public class ImageAdapter extends BaseAdapter{
             convertView.setTag(viewHolder);
         }else {
             viewHolder =(ViewHolder)convertView.getTag();
-            convertView.setLayoutParams(new AbsListView.LayoutParams((int)(parent.getWidth()/3)-1,(int)(parent.getWidth()/3) -1));
+            //convertView.setLayoutParams(new AbsListView.LayoutParams((int)(parent.getWidth()/3)-1,(int)(parent.getWidth()/3) -1));
         }
 
         viewHolder.imageView.setBackgroundResource(icon[position]);

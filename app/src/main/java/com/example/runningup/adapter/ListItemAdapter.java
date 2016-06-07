@@ -60,7 +60,6 @@ public class ListItemAdapter extends BaseAdapter{
             viewHolder.distance = (TextView) convertView.findViewById(R.id.distance);
             viewHolder.like = (TextView) convertView.findViewById(R.id.like);
             viewHolder.comment = (TextView) convertView.findViewById(R.id.comment);
-            // viewHolder.imageLayout = (GridLayout) convertView.findViewById(R.id.imageLayout);
             viewHolder.imageGridView = (GridView) convertView.findViewById(R.id.myView);
             viewHolder.likeimage = (ImageView)convertView.findViewById(R.id.dislikeimage);
 
